@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="tcc">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tracking your way</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-route.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body ng-controller="mainCtn">
+    <div id="header">
+        <div class="shadow">
+            <div class="left">
+                <p></p>
+            </div>
+            <div class="right">
+                <p>Hi, UserName</p>
+            </div>
+        </div>
+        <h1>
+            GPS App Helper
+        </h1>
+        <div class="tabs">
+            <div class="tab"><p>Home</p></div>
+            <div class="tab"><p>Summary</p></div>
+            <div class="tab"><p>Contact us</p></div>
+
+        </div>
+    </div>
+
+
+    <!--Aqui vem a view-->
+    <div class="background">
+        <div class="containerAppName">
+            <h3>Hey, UserName</h3>
+            <h1>Have a nice and safe trip!</h1>
+            <h2>Ola tudo bem? Aqui vem um texto aleatorio sobre a origem do mundo!</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Learn about us!</h1>
+        <div class="options">
+            <div class="option" ng-click="changeTabs(0)">
+                <p>About Us</p>
+            </div>
+            <div class="option" ng-click="changeTabs(1)">
+                <p>Why do that?</p>
+            </div>
+            <div class="option" ng-click="changeTabs(2)">
+                <p>Benefits</p>
+            </div>
+        </div>
+        <div class="boxInfo">
+            <p class="text" ng-if="tabs.about">
+                Oi
+                Lorem ipsum dolor sit amet, vis purto regione complectitur in.
+                Suavitate eloquentiam ut vis, no has iriure numquam. Option ut
+                roque appellantur in mel, fugit nusquam no sea. Ad sed audire i
+                ntegre, nam ut ancillae pertinax electram. Vel ne altera equidem
+                , mea ea tacimates percipitur scribentur, rebum repudiare pro at.
+                An pro lorem elitr dissentias. Rebum assum cu mea, civibus phaedr
+                um delicatissimi te vel. His ferri verterem no, te harum tempor p
+                ri. Ut eum ullum commune oportere. Mel no diceret facilisis, accu
+                samus conceptam sit no, nec nostro deleniti disputationi ut. Laud
+                em incorrupte assueverit vel ut, atomorum volutpat te nec. Vix at.
+            </p>
+            <p class="text" ng-if="tabs.why">
+                Tudo
+                Lorem ipsum dolor sit amet, vis purto regione complectitur in.
+                Suavitate eloquentiam ut vis, no has iriure numquam. Option ut
+                roque appellantur in mel, fugit nusquam no sea. Ad sed audire i
+                ntegre, nam ut ancillae pertinax electram. Vel ne altera equidem
+                , mea ea tacimates percipitur scribentur, rebum repudiare pro at.
+                An pro lorem elitr dissentias. Rebum assum cu mea, civibus phaedr
+                um delicatissimi te vel. His ferri verterem no, te harum tempor p
+                ri. Ut eum ullum commune oportere. Mel no diceret facilisis, accu
+                samus conceptam sit no, nec nostro deleniti disputationi ut. Laud
+                em incorrupte assueverit vel ut, atomorum volutpat te nec. Vix at.
+            </p>
+            <p class="text" ng-if="tabs.benefits">
+                Bem?
+                Lorem ipsum dolor sit amet, vis purto regione complectitur in.
+                Suavitate eloquentiam ut vis, no has iriure numquam. Option ut
+                roque appellantur in mel, fugit nusquam no sea. Ad sed audire i
+                ntegre, nam ut ancillae pertinax electram. Vel ne altera equidem
+                , mea ea tacimates percipitur scribentur, rebum repudiare pro at.
+                An pro lorem elitr dissentias. Rebum assum cu mea, civibus phaedr
+                um delicatissimi te vel. His ferri verterem no, te harum tempor p
+                ri. Ut eum ullum commune oportere. Mel no diceret facilisis, accu
+                samus conceptam sit no, nec nostro deleniti disputationi ut. Laud
+                em incorrupte assueverit vel ut, atomorum volutpat te nec. Vix at.
+            </p>
+        </div>
+    </div>
+
+    <div class="breakContainer">
+        <div class="text">
+            <p>Hey, are you having a good time? Do you have any suggestions?</p>
+        </div>
+        <div class="button">
+            <p>Send your request</p>
+        </div>
+        <div class="buttonFeed">
+            <p>Give your feedback</p>
+        </div>
+
+
+    </div>
+
+
+    <div class="container">
+        <h1>Quick statistics!</h1>
+        <h3>If you wanna some more info go to summary :)</h3>
+
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!--Aqui termina a view-->
+    <div class="footer"></div>
+</body>
+</html>
